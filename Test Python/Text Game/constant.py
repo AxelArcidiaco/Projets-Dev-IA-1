@@ -1,3 +1,5 @@
+# A list of constants for the game
+
 # Constants for Earth
 EARTH_GRAV = 9.807 # in m/s²
 EARTH_MASS = 5.9722e24 # in kg
