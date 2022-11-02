@@ -11,6 +11,8 @@ SOL_MASS = 1.98847e30 # in kg
 SOL_RADIUS = 696340 # in km
 SOL_LUMINOSITY = 1
 SOL_TEMP = 5778 # in Kelvin
+SOL_COLOR = "Yellow"
+SOL_TYPE = "Yellow Dwarf" # based on the Harvard classification
 
 # Astronomical constants
 ASTRONOMICAL_UNIT = AU = 149597871 # in km
