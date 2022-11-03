@@ -6,7 +6,6 @@
    "metadata": {},
    "outputs": [],
    "source": [
-    "@@ -1,71 +1,35 @@\n",
     "# A list of constants for the game\n",
     "\n",
     "# Constants for Earth\n",
