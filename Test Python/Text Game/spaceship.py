@@ -2,7 +2,7 @@
 from pickle import FALSE
 
 
-class spaceship:
+class Spaceship:
     colonists = 0 # Number of colonists aboard the spaceship
     probes = 0 # Number of probes aboard the spaceship
     techbase_state = 100 # State of the technological database inside the ship's computers
@@ -14,6 +14,4 @@ class spaceship:
         self.colonists = colonists
         self.probes = probes
         self.warpdrive = warpdrive
-        
-    
     
