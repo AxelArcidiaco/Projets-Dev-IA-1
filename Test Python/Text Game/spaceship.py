@@ -63,7 +63,8 @@ class Spaceship:
             s += "The ship is equipped with an Alcubierre Warp Drive.\n"
         else:
             s += "The ship isn't equipped with an Alcubierre Warp Drive.\n"
-        s += "The technological database integrity is " + str(self.techbase_state) + "%"
+        s += "The technological database integrity is at" + str(self.techbase_state) + "%\n"        
+        s += "The cultural database integrity is at" + str(self.techbase_state) + "%"
         
         return s
     
