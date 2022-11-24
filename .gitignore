@@ -14,3 +14,41 @@ MAJ_Python/projetRechercheNetflix/main.ipynb
 MAJ_Python/projetRechercheNetflix/methode/axel_mth/axel_mth_statistiques.py
 MAJ_Python/projetRechercheNetflix/main.py
 MAJ_Python/projetRechercheNetflix/methode/axel_mth/axel_mth_getMoviesActors.py
+MAJ_Python/projetRechercheNetflix (1).zip
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/data/credits.csv
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/data/credits.xlsx
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/data/movies_metadata.csv
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/data/movies_metadata.xlsx
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/data/search/actor.csv
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/data/search/cast.csv
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/data/search/country.csv
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/data/search/film_genres.csv
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/data/search/genre_films.csv
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/data/search/langage.csv
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/data/search/time.csv
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/data/user/actor.csv
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/data/user/country.csv
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/data/user/film.csv
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/data/user/genre.csv
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/data/user/research.csv
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/data/user/users.csv
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/guide/Documentation.txt
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/guide/Readme.txt
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/jupytertest/adeline_jupy/data_frame netflix Adeline.ipynb
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/jupytertest/axel_jupy/axel_test_mth_stats.ipynb
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/main.py
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/methode/axel_mth/__pycache__/axel_mth_statistiques.cpython-39.pyc
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/methode/axel_mth/axel_mth_getMoviesActors.py
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/methode/axel_mth/axel_mth_statistiques.py
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/methode/nicolas_mth/controller/user_bean.py
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/methode/nicolas_mth/functions.py
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/methode/nicolas_mth/model/user.py
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/methode/nicolas_mth/search.py
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/views/__pycache__/header.cpython-39.pyc
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/views/__pycache__/root_filter.cpython-39.pyc
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/views/__pycache__/stats.cpython-39.pyc
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/views/header.py
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/views/root_filter.py
+MAJ_Python/projetRechercheNetflix (1)/projetRechercheNetflix/views/stats.py
+MAJ_Python/projetRechercheNetflix/methode/axel_mth/__pycache__/axel_mth_getMoviesActors.cpython-39.pyc
+MAJ_Python/projetRechercheNetflix/methode/axel_mth/__pycache__/axel_mth_statistiques.cpython-39.pyc
