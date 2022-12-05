@@ -138,3 +138,25 @@ VALUES
     1.1,
     TRUE
 );
+
+-- Ajout de haricots vert à la table aliment
+INSERT INTO `aliment`(
+    `id`,
+    `nom`,
+    `marque`,
+    `sucre`,
+    `calories`,
+    `graisses`,
+    `proteines`,
+    `bio`
+)
+VALUES(
+    '25',
+    'haricots vert',
+    'Monoprix',
+    3,
+    25,
+    0,
+    1.7,
+    FALSE
+)
