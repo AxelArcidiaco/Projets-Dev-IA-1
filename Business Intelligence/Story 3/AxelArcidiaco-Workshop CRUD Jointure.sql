@@ -105,3 +105,36 @@ SELECT `nom`, `prenom`, `email` FROM utilisateur;
 
 -- Sélection des noms et calories des éléments de la table aliment
 SELECT `nom`, `calories` FROM `aliment`
+
+-- Updates
+
+-- Mise à jour de l'adresse mail d'un élément de la table utilisateur
+UPDATE `utilisateur` SET `email` = 'quentind@gmail.com' WHERE `id` = '1';
+-- Vérification de la modification
+SELECT * FROM `utilisateur` WHERE `id` = '1';
+
+-- Mise à jour de l'élément pomme de la table aliment en pomme golden
+UPDATE `aliment` SET `nom` = 'pomme golden' WHERE `aliment`.`id` = 1;
+-- vérification de la modification
+SELECT * FROM `aliment` WHERE `id` = '1';
+
+-- delete
+
+-- suppression de l'utilisateur avec l'id = 2
+DELETE FROM `utilisateur` WHERE `id` = '2';
+-- Vérification
+SELECT * FROM `utilisateur` WHERE `id` = '2'; -- L'élément avec l'id 2 ne doit plus apparaitre
+
+-- suppression de tous les éléments d'une table
+DELETE FROM utilisateur;
+-- Vérification
+SELECT * FROM `utilisateur`; -- La table doit être vide
+
+-- suppression d'une table
+DROP TABLE `utilisateur`;
+-- Vérification
+SHOW tables ; -- La table ne doit pas apparaitre
+
+-- suppression d'une base de données
+DROP DATABASE `foodly`;
+SHOW DATABASES ; -- La base de données foodly ne doit pas apparaitre
