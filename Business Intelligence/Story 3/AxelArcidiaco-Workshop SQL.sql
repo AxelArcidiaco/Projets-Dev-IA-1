@@ -31,12 +31,12 @@ INSERT INTO `aliment`VALUES
     (12,'filet de poulet','le gaulois',0,121,1.8,26.2,0),
     (13,'muesli','bjorg',26.5,170,5,3.5,1),
     (14,'café','carte noire',0,0,0,0,0),
-    (15,'jus d\'orange','innocent',16,74,0,1.6,0),
+    (15,"jus d\'orange",'innocent',16,74,0,1.6,0),
     (16,'jus de pomme','andros',24,100,0.2,0.2,1),
     (17,'pomme de terre','doréac',21.1,104,0.2,2.8,0),
     (18,'oeuf','naturalia',0.4,74,5.1,6.5,1),
     (19,'baguette','sans marque',36.1,185,1.2,7.5,0),
-    (20,'lait d\'amande','bjorg',6.1,80,5.3,1.5,1);
+    (20,"lait d\'amande",'bjorg',6.1,80,5.3,1.5,1);
 
 -- Table utilisateur
 DROP TABLE IF EXISTS `utilisateur`;
@@ -67,12 +67,7 @@ INSERT INTO `utilisateur` VALUES
 -- ==================================================================================================== --
 
 -- Test d'insertion d'une nouvelle ligne dans la table utilisateur
-INSERT INTO `utilisateur`(`nom`, `prenom`, `email`)
-VALUES(
-    'Durantay',
-    'Quentin',
-    'quentin@gmail.com'
-);
+INSERT INTO `utilisateur`(`nom`, `prenom`, `email`) VALUES( 'Durantay', 'Quentin', 'quentin@gmail.com' );
 
 -- Test d'insertion de plusieurs nouvelles lignes dans la table utilisateur
 INSERT INTO `utilisateur`(`nom`, `prenom`, `email`) VALUES
@@ -130,7 +125,7 @@ VALUES
     6.9,
     TRUE
 ),(
-    'lait d\'amande',
+    "lait d\'amande",
     'bjorg',
     4.5,
     59,
