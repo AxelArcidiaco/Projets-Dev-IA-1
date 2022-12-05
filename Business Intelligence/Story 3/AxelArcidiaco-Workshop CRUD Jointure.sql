@@ -66,7 +66,7 @@ INSERT INTO `utilisateur` VALUES
 -- ========= Explotation de la base de données foodly et de ses tables aliment et utilisateur ========= --
 -- ==================================================================================================== --
 
--- Les inserts
+-- inserts
 
 -- Test d'insertion d'une nouvelle ligne dans la table utilisateur
 INSERT INTO `utilisateur`(`nom`, `prenom`, `email`) VALUES( 'Durantay', 'Quentin', 'quentin@gmail.com' );
