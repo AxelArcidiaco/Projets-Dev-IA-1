@@ -126,15 +126,20 @@ DELETE FROM `utilisateur` WHERE `id` = '2';
 SELECT * FROM `utilisateur` WHERE `id` = '2'; -- L'élément avec l'id 2 ne doit plus apparaitre
 
 -- suppression de tous les éléments d'une table
-DELETE FROM utilisateur;
--- Vérification
-SELECT * FROM `utilisateur`; -- La table doit être vide
+-- DELETE FROM utilisateur;
+-- -- Vérification
+-- SELECT * FROM `utilisateur`; -- La table doit être vide
 
--- suppression d'une table
-DROP TABLE `utilisateur`;
--- Vérification
-SHOW tables ; -- La table ne doit pas apparaitre
+-- -- suppression d'une table
+-- DROP TABLE `utilisateur`;
+-- -- Vérification
+-- SHOW tables ; -- La table ne doit pas apparaitre
 
--- suppression d'une base de données
-DROP DATABASE `foodly`;
-SHOW DATABASES ; -- La base de données foodly ne doit pas apparaitre
+-- -- suppression d'une base de données
+-- DROP DATABASE `foodly`;
+-- SHOW DATABASES ; -- La base de données foodly ne doit pas apparaitre
+
+-- suppression de l'élément de la table aliment dont le nom est 'pomme golden'
+DELETE * FROM `aliment` WHERE `nom`='pomme golden';
+-- vérification
+SELECT * FROM `aliment`; -- L'élément de la table aliment dont le nom est 'pomme golden' ne doit pas apparaitre
