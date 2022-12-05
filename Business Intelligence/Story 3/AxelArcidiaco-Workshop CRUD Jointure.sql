@@ -106,6 +106,55 @@ SELECT `nom`, `prenom`, `email` FROM utilisateur;
 -- Sélection des noms et calories des éléments de la table aliment
 SELECT `nom`, `calories` FROM `aliment`
 
+-- Sélection de l'élément de la table aliment dont l'id est 4
+SELECT * FROM aliment WHERE id = 4;
+
+--
+SELECT * FROM aliment WHERE nom = "poire";
+
+--
+SELECT * FROM aliment WHERE calories < 90;
+
+--
+SELECT * FROM utilisateur WHERE email LIKE "%gmail.com";
+
+-- 
+SELECT * FROM aliment ORDER BY calories ASC;
+
+-- 
+SELECT * FROM aliment WHERE calories < 90 ORDER BY calories DESC;
+
+-- 
+SELECT  *
+FROM aliment
+WHERE (calories < 90)
+AND (sucre > 10)
+ORDER BY calories DESC;
+
+--
+SELECT * FROM aliment WHERE bio = 0;
+
+-- 
+SELECT * FROM aliment WHERE bio = 0 ORDER BY proteines DESC;
+
+-- 
+SELECT COUNT(*) FROM utilisateur WHERE email LIKE "%gmail.com";
+
+-- 
+SELECT COUNT(email) 
+FROM utilisateur 
+WHERE email LIKE "%gmail.com";
+
+--
+SELECT * 
+FROM aliment 
+WHERE nom like "%pomme%";
+
+-- 
+SELECT COUNT(nom) 
+FROM aliment 
+WHERE nom LIKE "%pomme%";
+
 -- Updates
 
 -- Mise à jour de l'adresse mail d'un élément de la table utilisateur
