@@ -241,12 +241,12 @@ ALTER TABLE utilisateur ADD CONSTRAINT `fk_langue_utilisateur` FOREIGN KEY (`id_
 
 -- Jointure entre les deux tables:
 -- INNER JOIN sur tout les éléments des tables
-SELECT * FROM utilisateur JOIN langues ON utilisateur.id_langue = langues.id_langue;
+SELECT * FROM utilisateur INNER JOIN langues ON utilisateur.id_langue = langues.id_langue;
 
 -- INNER JOIN qui ne prend en compte que les utilisateurs qui ont une adresse gmail et parle le français
 SELECT  *
 FROM utilisateur
-JOIN langues
+INNER JOIN langues
 ON utilisateur.id_langue = langues.id_langue
 WHERE (utilisateur.email LIKE "%gmail%")
 AND (langues.id_langue = 1);
@@ -259,14 +259,14 @@ SELECT  utilisateur.id
        ,utilisateur.email
        ,langues.nom_langue     AS "LANGUE"
 FROM utilisateur
-JOIN langues
+INNER JOIN langues
 ON utilisateur.id_langue = langues.id_langue
 WHERE (utilisateur.email LIKE "%gmail%") AND(langues.id_langue = 1)
 ORDER BY utilisateur.id DESC;
 
--- 
+-- Jointure qui affiche le nom de famille des utilisateurs et la langue qu'ils ont choisi
 SELECT UPPER(utilisateur.nom) AS "NOM", langues.nom_langue AS "LANGUE" FROM utilisateur
-JOIN langues
+INNER JOIN langues
 ON utilisateur.id_langue = langues.id_langue
 WHERE (langues.id_langue = 1)
 
@@ -284,6 +284,9 @@ UPDATE `langues` SET `code_iso` = 'en-gb' WHERE `langues`.`id_langue` = 2;
 
 -- Suppression d'un champ de la table aliment
 ALTER TABLE `aliment` DROP `vitamines_c`;
+
+-- Modification d'un champ existant de la table
+ALTER TABLE aliment MODIFY calories FLOAT;
 
 
 -- delete
