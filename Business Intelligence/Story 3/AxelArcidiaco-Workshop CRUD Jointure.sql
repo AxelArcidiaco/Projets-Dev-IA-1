@@ -62,9 +62,12 @@ INSERT INTO `utilisateur` VALUES
     (10, 'tember', 'fabienne', 'fabienne@yopmail.com');
 
 
+
+
 -- ==================================================================================================== --
 -- ========= Explotation de la base de données foodly et de ses tables aliment et utilisateur ========= --
 -- ==================================================================================================== --
+
 
 -- inserts
 
@@ -97,6 +100,7 @@ INSERT INTO `aliment`( `id`, `nom`, `marque`, `sucre`, `calories`, `graisses`, `
     1.7,
     FALSE
 )
+
 
 -- Les selects
 
@@ -180,9 +184,10 @@ SELECT COUNT(*) FROM aliment WHERE bio = FALSE;
 -- Somme des calories de tous les éléments de la table aliment
 SELECT SUM(calories) FROM aliment;
 
---
+-- Recherche du plus faible taux de graisse parmi les élément de la table aliment
 SELECT  MIN(graisses) AS "taux de graisse minimum"
 FROM aliment;
+
 
 -- Updates
 
@@ -195,6 +200,297 @@ SELECT * FROM `utilisateur` WHERE `id` = '1';
 UPDATE `aliment` SET `nom` = 'pomme golden' WHERE `aliment`.`id` = 1;
 -- vérification de la modification
 SELECT * FROM `aliment` WHERE `id` = '1';
+
+
+-- Création de views / sauvegarde des requêtes
+
+-- création d'une vue qui contient la requête permettant d'affiche tous les utilisateurs dont l'adresse mail fini par gmail.com
+CREATE VIEW utilisateurs_gmail_vw AS (
+SELECT  *
+FROM utilisateur
+WHERE email LIKE "%gmail.com" );
+
+-- Affiche de la vue ainsi créée
+SELECT * FROM utilisateurs_gmail_vw;
+
+-- Séléction des élément de la vue dont le prénom contient la lettre m
+SELECT  *
+FROM utilisateurs_gmail_vw
+WHERE prenom LIKE "%m%";
+
+-- Création d'une vue qui contient la requête permettant d'obtenir la liste des aliments non bio trié par ordre décroissant sur leur contenu en protéine
+CREATE VIEW aliment_nonbio_vw AS (
+SELECT  *
+FROM aliment
+WHERE bio = 0 ORDER BY proteines DESC);
+
+-- Affichage de la vue ainsi créée
+SELECT * FROM aliment_nonbio_vw;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 -- delete
 
