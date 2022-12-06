@@ -236,6 +236,9 @@ CREATE TABLE langues (id_langue INT AUTO_INCREMENT, nom_langue VARCHAR(50), PRIM
 -- Remplisage de la table langue
 INSERT INTO `langues` (`id_langue`, `nom_langue`) VALUES ('1', 'Français'), ('2', 'Anglais');
 
+-- Lien entre les deux tables
+ALTER TABLE utilisateur ADD CONSTRAINT `fk_langue_utilisateur` FOREIGN KEY (`id_langue`) REFERENCES utilisateur (`id_langue`) ON DELETE CASC;
+
 -- Jointure entre les deux tables:
 -- INNER JOIN sur tout les éléments des tables
 SELECT * FROM utilisateur JOIN langues ON utilisateur.id_langue = langues.id_langue;
@@ -261,6 +264,26 @@ ON utilisateur.id_langue = langues.id_langue
 WHERE (utilisateur.email LIKE "%gmail%") AND(langues.id_langue = 1)
 ORDER BY utilisateur.id DESC;
 
+-- 
+SELECT UPPER(utilisateur.nom) AS "NOM", langues.nom_langue AS "LANGUE" FROM utilisateur
+JOIN langues
+ON utilisateur.id_langue = langues.id_langue
+WHERE (langues.id_langue = 1)
+
+
+-- ALTER TABLE / UPDATE
+
+-- Ajout d'un champ à la table aliment
+ALTER TABLE aliment ADD vitamines_c FLOAT;
+
+-- Ajout d'un champ à la table langue
+ALTER TABLE langues ADD code_iso VARCHAR(20);
+-- Remplisage de la nouvelle colonne
+UPDATE `langues` SET `code_iso` = 'fr-fr' WHERE `langues`.`id_langue` = 1;
+UPDATE `langues` SET `code_iso` = 'en-gb' WHERE `langues`.`id_langue` = 2;
+
+-- Suppression d'un champ de la table aliment
+ALTER TABLE `aliment` DROP `vitamines_c`;
 
 
 -- delete
