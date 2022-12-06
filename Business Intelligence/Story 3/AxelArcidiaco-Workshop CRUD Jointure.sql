@@ -232,264 +232,34 @@ SELECT * FROM aliment_nonbio_vw;
 
 -- Création de la table langue
 CREATE TABLE langues (id_langue INT AUTO_INCREMENT, nom_langue VARCHAR(50), PRIMARY KEY (id_langue));
+
 -- Remplisage de la table langue
 INSERT INTO `langues` (`id_langue`, `nom_langue`) VALUES ('1', 'Français'), ('2', 'Anglais');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-- Jointure entre les deux tables:
+-- INNER JOIN sur tout les éléments des tables
+SELECT * FROM utilisateur JOIN langues ON utilisateur.id_langue = langues.id_langue;
+
+-- INNER JOIN qui ne prend en compte que les utilisateurs qui ont une adresse gmail et parle le français
+SELECT  *
+FROM utilisateur
+JOIN langues
+ON utilisateur.id_langue = langues.id_langue
+WHERE (utilisateur.email LIKE "%gmail%")
+AND (langues.id_langue = 1);
+
+-- INNER JOIN qui ne prend en compte que les utilisateurs qui ont une adresse gmail et parle le français
+-- N'affiche que les noms (en majuscule), les prénoms, leur email, et leur langues
+SELECT  utilisateur.id
+       ,UPPER(utilisateur.nom) AS "NOM"
+       ,utilisateur.prenom
+       ,utilisateur.email
+       ,langues.nom_langue     AS "LANGUE"
+FROM utilisateur
+JOIN langues
+ON utilisateur.id_langue = langues.id_langue
+WHERE (utilisateur.email LIKE "%gmail%") AND(langues.id_langue = 1)
+ORDER BY utilisateur.id DESC;
 
 
 
