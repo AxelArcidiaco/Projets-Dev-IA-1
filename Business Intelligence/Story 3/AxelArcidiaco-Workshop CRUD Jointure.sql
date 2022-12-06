@@ -109,48 +109,48 @@ SELECT `nom`, `calories` FROM `aliment`
 -- Sélection de l'élément de la table aliment dont l'id est 4
 SELECT * FROM aliment WHERE id = 4;
 
---
+-- Sélection des éléments de la table aliment dont le nom est poire
 SELECT * FROM aliment WHERE nom = "poire";
 
---
+-- Sélection des éléments dont les calories sont inférieur à 90
 SELECT * FROM aliment WHERE calories < 90;
 
---
+-- Sélection des éléments dont l'adresse mail fini par gmail.com
 SELECT * FROM utilisateur WHERE email LIKE "%gmail.com";
 
--- 
+-- Trie des élément de la table aliment par ordre croissant sur leur nombre de calories
 SELECT * FROM aliment ORDER BY calories ASC;
 
--- 
+-- Sélection des éléments dont les calories sont inférieur à 90 trié par ordre décroissant sur leur nombre de calories
 SELECT * FROM aliment WHERE calories < 90 ORDER BY calories DESC;
 
--- 
+-- Sélection des éléments dont les calories sont inférieur à 90 et le contenu en sucre est supérieur à 10
 SELECT  *
 FROM aliment
 WHERE (calories < 90)
 AND (sucre > 10)
 ORDER BY calories DESC;
 
---
+-- Sélection des élément qui ne sont pas bio
 SELECT * FROM aliment WHERE bio = 0;
 
--- 
+-- Selection des éléments qui ne sont pas bio trié par ordre décroissant de leur contenu en protéine
 SELECT * FROM aliment WHERE bio = 0 ORDER BY proteines DESC;
 
--- 
+--  Comptage du nombre d'élément dont l'adresse mail fini par gmail.com
 SELECT COUNT(*) FROM utilisateur WHERE email LIKE "%gmail.com";
 
--- 
+--  Comptage du nombre d'élément dont l'adresse mail fini par gmail.com
 SELECT COUNT(email) 
 FROM utilisateur 
 WHERE email LIKE "%gmail.com";
 
---
+-- Sélection des éléments dont le nom contient pomme
 SELECT * 
 FROM aliment 
 WHERE nom like "%pomme%";
 
--- 
+-- Comptage du nombre d'élement dont le nom contient pomme
 SELECT COUNT(nom) 
 FROM aliment 
 WHERE nom LIKE "%pomme%";
