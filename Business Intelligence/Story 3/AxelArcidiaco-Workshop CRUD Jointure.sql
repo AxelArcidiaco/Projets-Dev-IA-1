@@ -155,6 +155,35 @@ SELECT COUNT(nom)
 FROM aliment 
 WHERE nom LIKE "%pomme%";
 
+-- Comptage du nombre d'élement dont le nom est unique et qui contient pomme
+SELECT COUNT(DISTINCT nom) 
+FROM aliment 
+WHERE nom LIKE "%pomme%";
+
+-- La même chose que la requête précédente mais cette fois avec un alias
+SELECT  COUNT(DISTINCT nom) AS "produits différents contenant le mot pomme"
+FROM aliment
+WHERE nom LIKE "%pomme%";
+
+-- Recherche de  l'élément de la table aliment dont le taux de sucre est le plus élévé
+SELECT MAX(sucre)  AS "taux de sucre maximum"
+FROM aliment;
+
+-- Moyenne des calories des élément de aliment qui on plus de 30g de calorie
+SELECT  AVG(calories) AS "calories moyennes des aliments > 30g"
+FROM aliment
+WHERE calories > 30;
+
+-- Comptage des élément de la table aliment qui ne sont pas bio
+SELECT COUNT(*) FROM aliment WHERE bio = FALSE;
+
+-- Somme des calories de tous les éléments de la table aliment
+SELECT SUM(calories) FROM aliment;
+
+--
+SELECT  MIN(graisses) AS "taux de graisse minimum"
+FROM aliment;
+
 -- Updates
 
 -- Mise à jour de l'adresse mail d'un élément de la table utilisateur
