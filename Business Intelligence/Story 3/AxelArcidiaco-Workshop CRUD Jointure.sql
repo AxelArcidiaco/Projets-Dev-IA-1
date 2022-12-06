@@ -228,11 +228,12 @@ WHERE bio = 0 ORDER BY proteines DESC);
 SELECT * FROM aliment_nonbio_vw;
 
 
+-- Jointures
 
-
-
-
-
+-- Création de la table langue
+CREATE TABLE langues (id_langue INT AUTO_INCREMENT, nom_langue VARCHAR(50), PRIMARY KEY (id_langue));
+-- Remplisage de la table langue
+INSERT INTO `langues` (`id_langue`, `nom_langue`) VALUES ('1', 'Français'), ('2', 'Anglais');
 
 
 
