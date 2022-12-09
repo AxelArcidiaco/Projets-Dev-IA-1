@@ -1,0 +1,8 @@
+2022/Dec/09 - 15:34:57 --> ETL Job Started
+2022/Dec/09 - 15:34:57 --> Extract phase Started
+2022/Dec/09 - 15:34:57 --> Extract phase Ended
+2022/Dec/09 - 15:34:57 --> Transform Job Started
+2022/Dec/09 - 15:34:57 --> Transform Job Ended
+2022/Dec/09 - 15:34:57 --> Load Job Started
+2022/Dec/09 - 15:34:57 --> Load Job Ended
+2022/Dec/09 - 15:34:57 --> ETL Job Ended
