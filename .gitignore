@@ -150,3 +150,80 @@ Business Intelligence/Story 4/Workshop BI/Exercise Files.zip
 Business Intelligence/Story 4/Workshop BI/Day 2 Workfiles/ContosoData.accdb
 Business Intelligence/Story 4/Workshop Python ETL/source.zip
 Business Intelligence/Story 4/Workshop Python OLAP/content_full/content.mv.db
+*.zip
+Business Intelligence/Story 5/workshops/.DS_Store
+Business Intelligence/Story 5/workshops/workshops/.DS_Store
+Business Intelligence/Story 5/workshops/workshops/covid_19/.DS_Store
+*.svn-base
+*.svn-base
+Business Intelligence/Story 5/workshops/workshops/covid_19/csse_covid_19_time_series/.svn/pristine/01/01f2afd9aecc571d7e5e25044cbf8f4285396fee.svn-base
+Business Intelligence/Story 5/workshops/workshops/covid_19/csse_covid_19_time_series/.svn/pristine/04/042b5c0813aeadef604eb669d41e7b966b17a782.svn-base
+Business Intelligence/Story 5/workshops/workshops/covid_19/csse_covid_19_time_series/.svn/pristine/3b/3b96eab322f3351b667e1dedd9ca664b81b8a3db.svn-base
+Business Intelligence/Story 5/workshops/workshops/covid_19/csse_covid_19_time_series/.svn/pristine/47/476eb92a0f1951214bcafc6e75bdbc4d1a2bfbb9.svn-base
+Business Intelligence/Story 5/workshops/workshops/covid_19/csse_covid_19_time_series/.svn/pristine/4e/4e3887822927072d10f94577967c6253a72131c8.svn-base
+Business Intelligence/Story 5/workshops/workshops/covid_19/csse_covid_19_time_series/.svn/pristine/64/64eaa3c350848a90357ef8f8b8d65cec858400b5.svn-base
+Business Intelligence/Story 5/workshops/workshops/covid_19/csse_covid_19_time_series/.svn/pristine/a6/a642c9c647b2f09a55f47051e021776f4307c405.svn-base
+Business Intelligence/Story 5/workshops/workshops/covid_19/csse_covid_19_time_series/.svn/pristine/ea/eaa3d84cb77d92a21b111fd1e37f53edc1ff9de0.svn-base
+Business Intelligence/Story 4/AxelArcidiaco-Workshop BI.zip
+Business Intelligence/Story 5/data/Nombre de dépistage par jour en million.xlsx
+Business Intelligence/Story 5/data/Nombre d’hospitalisations pour Covid-19 rapporté à la population régionale pour chaque vague.xlsx
+Business Intelligence/Story 5/data/Nombre hebdomadaire hospitalisations -entrées en soins critiques - décès à l'hôpital liés à la Covid-19.xlsx
+Business Intelligence/Story 5/data/non-insee data/time_series_covid19_confirmed_global.csv
+Business Intelligence/Story 5/data/non-insee data/time_series_covid19_confirmed_US.csv
+Business Intelligence/Story 5/data/non-insee data/time_series_covid19_deaths_global.csv
+Business Intelligence/Story 5/data/non-insee data/time_series_covid19_deaths_US.csv
+Business Intelligence/Story 5/data/non-insee data/time_series_covid19_recovered_global.csv
+Business Intelligence/Story 5/data/Part de la population fr dépistée contre le Covid-19 2020-2021.xlsx
+Maths/loi_binomiale.ipynb
+Business Intelligence/Story 5/AxelArcidiaco_workshop.ipynb
+Business Intelligence/Story 5/.ipynb_checkpoints/AxelArcidiaco_workshop-checkpoint.ipynb
+Business Intelligence/Story 5/data/Nombre de dépistage par jour en million.xlsx
+Business Intelligence/Story 5/data/Nombre d’hospitalisations pour Covid-19 rapporté à la population régionale pour chaque vague.xlsx
+Business Intelligence/Story 5/data/Nombre hebdomadaire hospitalisations -entrées en soins critiques - décès à l'hôpital liés à la Covid-19.xlsx
+Business Intelligence/Story 5/data/non-insee data/time_series_covid19_confirmed_global.csv
+Business Intelligence/Story 5/data/non-insee data/time_series_covid19_confirmed_US.csv
+Business Intelligence/Story 5/data/non-insee data/time_series_covid19_deaths_global.csv
+Business Intelligence/Story 5/data/non-insee data/time_series_covid19_deaths_US.csv
+Business Intelligence/Story 5/data/non-insee data/time_series_covid19_recovered_global.csv
+Business Intelligence/Story 5/data/Part de la population fr dépistée contre le Covid-19 2020-2021.xlsx
+Business Intelligence/Story 4/Workshop MySQL ETL/etl/
+Business Intelligence/Story 4/Workshop Python OLAP/AxelArcidiaco-Workshop_Python_OLAP.ipynb
+Business Intelligence/Story 4/Workshops Data Warehouse ETL & OLAP.zip
+Business Intelligence/Story 5/.ipynb_checkpoints/AxelArcidiaco_workshop-checkpoint.ipynb
+Business Intelligence/Story 5/AxelArcidiaco_workshop.ipynb
+Business Intelligence/Story 5/AxelArcidiaco_Workshop_Voila.ipynb
+Business Intelligence/Story 5/data/Part de la population fr vaccinée contre le Covid-19 en 2021.xlsx
+Business Intelligence/Story 5/workshops/workshops/covid_19/csse_covid_19_time_series/.svn/entries
+Business Intelligence/Story 5/workshops/workshops/covid_19/csse_covid_19_time_series/.svn/format
+Business Intelligence/Story 5/workshops/workshops/covid_19/csse_covid_19_time_series/.svn/wc.db
+Business Intelligence/Story 5/workshops/workshops/covid_19/csse_covid_19_time_series/.svn/wc.db-journal
+Business Intelligence/Story 5/workshops/workshops/covid_19/csse_covid_19_time_series/Errata.csv
+Business Intelligence/Story 5/workshops/workshops/covid_19/csse_covid_19_time_series/README.md
+Business Intelligence/Story 5/workshops/workshops/covid_19/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv
+Business Intelligence/Story 5/workshops/workshops/covid_19/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv
+Business Intelligence/Story 5/workshops/workshops/covid_19/csse_covid_19_time_series/time_series_covid19_deaths_global.csv
+Business Intelligence/Story 5/workshops/workshops/covid_19/csse_covid_19_time_series/time_series_covid19_deaths_US.csv
+Business Intelligence/Story 5/workshops/workshops/covid_19/csse_covid_19_time_series/time_series_covid19_recovered_global.csv
+Business Intelligence/Story 5/workshops/workshops/covid_19/csse_covid_19_time_series/UID_ISO_FIPS_LookUp_Table.csv
+Business Intelligence/Story 5/workshops/workshops/dash_workshop/app.py
+Business Intelligence/Story 5/workshops/workshops/euromo/charts-excess-mortality.csv
+Business Intelligence/Story 5/workshops/workshops/euromo/charts-pooled-by-age-group.csv
+Business Intelligence/Story 5/workshops/workshops/euromo/charts-z-scores-by-country.csv
+Business Intelligence/Story 5/workshops/workshops/iris/iris.csv
+Business Intelligence/Story 5/workshops/workshops/seaborn/tuto_seaborn.ipynb
+Business Intelligence/Story 5/workshops/workshops/voila_workshop/red-and-sky-blue.png
+Business Intelligence/Story 5/workshops/workshops/voila_workshop/workshop_voila.ipynb
+Maths/loi_binomiale.ipynb
+Maths/loi_binomiale.ipynb
+Business Intelligence/Story 5/data/Part de la population fr vaccinée contre le Covid-19 en 2021.xlsx
+Business Intelligence/Story 5/AxelArcidiaco_workshop.ipynb
+Business Intelligence/Story 5/.ipynb_checkpoints/AxelArcidiaco_workshop-checkpoint.ipynb
+Business Intelligence/Story 4/Workshops Data Warehouse ETL & OLAP.zip
+Business Intelligence/Story 4/Workshop Python OLAP/AxelArcidiaco-Workshop_Python_OLAP.ipynb
+*.db
+*.db
+*.db-journal
+Business Intelligence/Story 5/workshops/covid_19/.DS_Store
+Business Intelligence/Story 5/workshops/covid_19/csse_covid_19_time_series/.svn/entries
+Business Intelligence/Story 5/workshops/covid_19/csse_covid_19_time_series/.svn/format
+*.csv
