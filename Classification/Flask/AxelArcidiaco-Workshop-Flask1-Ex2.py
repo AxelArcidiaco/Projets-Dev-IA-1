@@ -8,5 +8,5 @@ app = Flask(__name__)
 def hello():
     return render_template("home.html", message = "Hello World!")
 
-#if __name__ == "__main__":
-#    app.run()
+if __name__ == "__main__":
+   app.run()
