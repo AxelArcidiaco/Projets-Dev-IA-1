@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from flask import Flask, render_template
-app = Flask(__name__)
+app = Flask(__name__, template_folder="templates")
 
 @app.route("/")
 def hello():
@@ -10,7 +10,7 @@ def hello():
 
 @app.route("/next")
 def suite():
-    return render_template("./templates/page_suivante.html")
+    return render_template("page_suivante.html")
 
 # gestion d'erreur 404
 @app.errorhandler(404)  
