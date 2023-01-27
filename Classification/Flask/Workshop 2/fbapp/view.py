@@ -7,6 +7,7 @@ app.config.from_object('config')
 # To get one variable, tape app.config['MY_VARIABLE']
 
 @app.route('/')
+@app.route('/index')
 def index():
     # return "Hello world !"
     return render_template('index.html')
