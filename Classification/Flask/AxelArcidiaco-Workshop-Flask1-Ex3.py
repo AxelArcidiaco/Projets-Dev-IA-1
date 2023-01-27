@@ -12,5 +12,12 @@ def hello():
 def suite():
     return render_template("./templates/page_suivante.html")
 
+# gestion d'erreur 404
+@app.errorhandler(404)  
+# inbuilt function which takes error as parameter
+def not_found(e):  
+# defining function
+    return render_template("404.html")
+
 if __name__ == "__main__":
    app.run()
