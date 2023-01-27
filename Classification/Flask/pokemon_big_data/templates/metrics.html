@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+    <br><br><br>
+    <h1>Metrics</h1>
+
+    <ul> 
+      <li><h3> Nombre de répondants : {{ nb_answers }} </h3></li>
+      <li align = "right"><a href="{{ url_for('logout') }}"> Se déconnecter </a></li>
+    </ul>
+
+    <div class="row">
+        <hr>
+        <div class=page>
+          <h3>3 meilleures réponses</h3>
+          {% for table in tables %}
+            {{ table |safe }}
+          {% endfor %}
+
+        </div>
+<div class="row" align = "center">
+           <h3>Le Pokémon le plus souvent reconnu est : {{nom_pokemon}}</h3>
+   
+<img src="/static/images/{{image}}" alt="pic1">
+</div>
+
+
+
+{% endblock %}

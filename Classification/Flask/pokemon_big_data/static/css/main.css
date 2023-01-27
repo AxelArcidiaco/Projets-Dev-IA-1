@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: black;
+}
+ 
+/*
+ * Create dark grey header with a white logo
+ */
+  
+header {
+  background-color: grey;
+  height: 50px;
+  width: 150%;
+  opacity: .9;
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+ 
+header h1.logo {
+  margin: 15px;
+  font-size: 1.5em;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: left;
+}
+ 
+header h1.logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+h4 {
+  font-size: 1.7em;
+  font-weight: 100;
+  margin-top: 30px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #000000;
+} 
+
+
+
+h1 {
+  font-size: 2em;
+  color: black;
+} 
+
+/*
+ * Center the body content
+ */
+  
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+ 
+div.jumbo {
+  padding: 10px 0 30px 0;
+  background-color: #eeeeee;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+ 
+#question_no {
+  float: left;
+        padding: 5px 5px;
+  background: #D0F5A9;
+}
+
+
+#score {
+  float: right;
+        padding: 5px 5px;
+  background: #D0F5A9;
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: 40px;
+  text-align: left ;
+  letter-spacing: -2px;
+}
+
+
+alert {
+  background-color: orange;
+  text-align: center;
+}
+ 
+alert-danger {
+  background-color: green;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.7em;
+  font-weight: 100;
+  margin-top: 30px;
+  text-align: left;
+  letter-spacing: -1px;
+  color: Grey;
+}
+
+h4 {
+  font-size: .2em;
+}
+
+ul {
+
+ list-style-type: none;
+ margin:0;
+ padding: 0;  
+}
+
+li {
+  display: block;
+}
+
+
+.menu {
+  float: right;
+  margin-top: 8px;
+}
+ 
+.menu li {
+  display: inline;
+}
+ 
+.menu li + li {
+  margin-left: 35px;
+}
+ 
+.menu li a {
+  color: #999;
+  text-decoration: none;
+}
+
+table.dataframe, .dataframe th, .dataframe td {
+  border: none;
+  border-bottom: 1px solid #C8C8C8;
+  border-collapse: collapse;
+  text-align:left;
+  padding: 10px;
+  margin-bottom: 40px;
+  font-size: 0.9em;
+}
+
+
+tr:nth-child(odd)   { background-color:#eee; }
+tr:nth-child(even)  { background-color:#fff; }
+
+tr:hover            { background-color: #ffff99;}
