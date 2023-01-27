@@ -1,6 +1,8 @@
+import os
 from flask import Flask
-from fbapp.view import app
-from fbapp import models
+
+from .views import app
+from . import models
 
 # Connect sqlalchemy to app
 models.db.init_app(app)
