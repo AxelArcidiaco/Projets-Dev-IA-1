@@ -1,7 +1,9 @@
+# Importation des bibliothèques Python
 import random
 import os
 from fbapp.models import Content, Gender
 from PIL import Image, ImageFont, ImageDraw
+import textwrap
 
 
 def find_content(gender):
@@ -14,6 +16,9 @@ class OpenGraphImage:
     def __init__(self, first_name, description):
         background = self.base()
         background.show()
+        # textwrap découpe une chaine de caractères sans couper les mots au milieu.
+        sentences = textwrap.wrap(description, width=60)
+
 
     def base(self):
         img = Image.new('RGB', (1200, 630), '#18BC9C')
