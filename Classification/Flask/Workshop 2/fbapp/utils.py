@@ -1,7 +1,7 @@
 # Importation des bibliothèques Python
 import random
 import os
-from fbapp.models import Content, Gender
+from models import Content, Gender
 from PIL import Image, ImageFont, ImageDraw
 import textwrap
 
