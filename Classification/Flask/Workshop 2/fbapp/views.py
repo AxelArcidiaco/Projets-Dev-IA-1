@@ -25,7 +25,7 @@ def index():
 
     og_description = "Découvre qui tu es vraiment en faisant le test ultime !"
     return render_template('index.html',
-                           user_name='Julio',
+                           user_name='Axel',
                            user_image=url_for(
                                'static', filename='img/profile.png'),
                            description=description,
