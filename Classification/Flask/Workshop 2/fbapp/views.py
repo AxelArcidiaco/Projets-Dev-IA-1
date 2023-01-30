@@ -1,12 +1,11 @@
 from flask import Flask, render_template, url_for, request
+from .utils import find_content, OpenGraphImage
 
 app = Flask(__name__)
 
 # Config options - Make sure you created a 'config.py' file.
 app.config.from_object('config')
 # To get one variable, tape app.config['MY_VARIABLE']
-
-from .utils import find_content
 
 @app.route('/')
 @app.route('/index/')
@@ -43,6 +42,7 @@ def result():
     description = find_content(gender).description
     img = 'tmp/sample.jpg'
     og_url = url_for('index', img=img, _external=True)
+    img = OpenGraphImage(uid, user_name, description).location
     return render_template('result.html',
                             user_name=user_name,
                             user_image=profile_pic,
