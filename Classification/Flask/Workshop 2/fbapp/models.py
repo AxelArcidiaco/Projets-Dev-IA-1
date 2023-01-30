@@ -6,12 +6,10 @@ from .views import app
 # Create database connection object
 db = SQLAlchemy(app)
 
-
 class Gender(enum.Enum):
     female = 0
     male = 1
     other = 2
-
 
 class Content(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -22,12 +20,10 @@ class Content(db.Model):
         self.description = description
         self.gender = gender
 
-
 def init_db():
     db.drop_all()
     db.create_all()
     db.session.add(Content("THIS IS SPARTAAAAAAA!!!", Gender['male']))
-    db.session.add(
-        Content("What's your favorite scary movie?", Gender['female']))
+    db.session.add(Content("What's your favorite scary movie?", Gender['female']))
     db.session.commit()
     lg.warning('Database initialized!')
