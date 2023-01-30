@@ -1,4 +1,3 @@
-# Importation des bibliothèques Pyhton
 from flask_sqlalchemy import SQLAlchemy
 import logging as lg
 import enum
