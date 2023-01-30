@@ -1,6 +1,6 @@
 import random
-
 from fbapp.models import Content, Gender
+from PIL import Image
 
 
 def find_content(gender):
@@ -11,8 +11,8 @@ def find_content(gender):
 class OpenGraphImage:
 
     def __init__(self, first_name, description):
-        self.base()
+      background = self.base()
 
     def base(self):
-        # create a basic image
-        pass
+      img = Image.new('RGB', (1200, 630), '#18BC9C')
+      return img
