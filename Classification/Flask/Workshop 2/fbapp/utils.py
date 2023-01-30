@@ -12,6 +12,7 @@ class OpenGraphImage:
 
     def __init__(self, first_name, description):
       background = self.base()
+      background.show()
 
     def base(self):
       img = Image.new('RGB', (1200, 630), '#18BC9C')
