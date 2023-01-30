@@ -13,7 +13,8 @@ def find_content(gender):
 
 class OpenGraphImage:
 
-    def __init__(self, first_name, description):
+    def __init__(self, uid, first_name, description):
+        self.location = self._location(uid)
         background = self.base()
         background.show()
         # textwrap découpe une chaine de caractères
@@ -32,6 +33,15 @@ class OpenGraphImage:
             current_h += h + pad
 
         background.show()
+        background.save(self._path(uid))
+
+    def _location(self, uid):
+        return 'tmp/{}.jpg'.format(uid)
+
+    def _path(self, uid):
+        # Le nom de l'image est l'identifiant Facebook de la personne.
+        # Cela nous garantit de ne pas avoir de doublon.
+        return os.path.join('fbapp', 'static', 'tmp', '{}.jpg'.format(uid))
 
     def base(self):
         img = Image.new('RGB', (1200, 630), '#18BC9C')
@@ -55,7 +65,7 @@ class OpenGraphImage:
 
         # Ajout du texte à l'image.
         draw.text(position, text, (255, 255, 255), font=font)
-        
+
         # Nous devons renvoyer la largeur et la hauteur
         # pour imprimer le texte.
         return (w, h)
