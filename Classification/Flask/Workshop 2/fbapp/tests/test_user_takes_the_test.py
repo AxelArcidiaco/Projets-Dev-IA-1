@@ -23,16 +23,12 @@ class TestUserTakesTheTest(LiveServerTestCase):
     def tearDown(self):
         self.driver.quit()
 
-
-class TestUserTakesTheTest(LiveServerTestCase):
     def test_user_login(self):
         # On ouvre le navigateur avec l'adresse du serveur.
         self.driver.get(self.get_server_url())
         # L'adresse dans l'url doit être celle que l'on attend.
         assert self.driver.current_url == 'http://localhost:8943/'
 
-
-class TestUserTakesTheTest(LiveServerTestCase):
     def clicks_on_login(self):
         button = self.get_el(".fb-login-button")
 
