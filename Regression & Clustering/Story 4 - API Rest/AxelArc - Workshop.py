@@ -8,3 +8,8 @@ persons = {
     "Panel":"Loic",
     "Jacquenet":"Adrien"
 }
+
+flask_app = Flask(__name__)
+app = Api(app = flask_app)
+
+name_space = app.namespace('main', description='Main APIs')
