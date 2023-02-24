@@ -1,6 +1,7 @@
 # Importation bibliothèque Python
 from flask import Flask
 from flask_restplus import Api, Resource
+from werkzeug.utils import cached_property
 
 persons = {
     "Arcidiaco": "Axel",
