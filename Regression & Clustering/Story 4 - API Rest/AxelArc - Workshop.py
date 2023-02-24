@@ -1,6 +1,6 @@
 # Importation bibliothèque Python
-from flask import Flask
-from flask_restplus import Api, Resource
+from flask import Flask, request
+from flask_restplus import Api, Resource, fields
 from werkzeug.utils import cached_property
 
 persons = {
@@ -13,9 +13,12 @@ persons = {
 }
 
 flask_app = Flask(__name__)
-app = Api(app=flask_app)
+app = Api(app = flask_app, 
+		  version = "1.0", 
+		  title = "Name Recorder", 
+		  description = "Manage names of various users of the application")
 
-name_space = app.namespace('main', description='Main APIs')
+name_space = app.namespace('names', description='Manage names')
 
 @name_space.route("/")
 class MainClass(Resource):
