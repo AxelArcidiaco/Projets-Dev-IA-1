@@ -1,0 +1,14 @@
+<employees>
+    <employee>
+        <prenom>John</prenom>
+        <nom>Doe</nom>
+    </employee>
+    <employee>
+        <prenom>Arlette</prenom>
+        <nom>Smith</nom>
+    </employee>
+    <employee>
+        <prenom>Jean</prenom>
+        <nom>Dupont</nom>
+    </employee>
+</employees>
