@@ -1,0 +1,46 @@
+{% extends 'base.html' %} {% block header %}
+
+{% endblock %} {% block content %}
+<div class="section no-pad-bot">
+  <div class="container">
+  
+    <div class="row center">
+      <h5 class="header col s12 light">Veuillez vous connecter pour continuer</h5>
+    </div>
+  
+    <br><br>
+
+  </div>
+</div>
+<div class="container pt-60">
+  <div class="row">
+    <div class="col s6">
+      <img src="{{ url_for('static', filename='images/zoe.jpg')}}" alt="voiture electrique zoe" class="responsive-img">
+    </div>
+    <div class="col s6">
+        <form action="{{ url_for('login')}}" method="POST">
+          
+            <div class="row">
+              <div class="input-field col s12">
+                 <input name="email" type="email" class="validate">
+                 <label for="email">E-mail</label>
+            </div>
+           
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <label for="password">Mot de passe</label>
+              <input name="password" type="password"  class="validate" required>
+           </div>
+          </div>
+          <div class="row center">
+            <button class="btn waves-effect waves-light" type="submit">Envoyer
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </form>
+    </div>
+    <br><br>
+  </div>
+</div>
+{% endblock %} 

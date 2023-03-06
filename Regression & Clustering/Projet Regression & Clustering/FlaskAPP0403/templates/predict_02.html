@@ -1,0 +1,147 @@
+{% extends 'base.html' %} {% block header %}
+
+{% endblock %} {% block content %}
+  <!--Main layout-->
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+    
+      <div class="row center">
+        <h4 class="header col s12 light">Estimer le prix d'un véhicule d'occasion</h4>
+      </div>
+      <div class="row center">
+        <img src="{{ url_for('static', filename='images/vrtual-auto.jpg') }}" alt="voiture sortant d'un téléphone mobile">
+      </div>
+      <br>
+    </div>
+  </div>
+  <div class="container">
+    <div class="col s12 m4">
+      <div class="icon-block">
+        <p class="light center">Veuillez appliquer les critères correspondants à votre type d'estimation</p>
+      </div>
+    </div>
+  </div>
+<!--Début du formulaire pour estimer le prix d'un véhicule-->
+<br>
+<div class="container">
+  <br><br>
+<div class="row">
+  <form action="{{ url_for('predict')}}" method="POST">
+    <div class="col s6">
+    <div class="input-field col s12 ">
+      
+      <label>Moteur (CC)</label>
+      <input name="moteur" type="text">
+    </div>
+    <div class="input-field col s12 ">
+    
+      <label>kilomètre par litre (km/l)</label>
+      <input name="mileage" type="number">
+    </div>
+    <div class="input-field col s12 ">
+      
+      <label>Kilométrage (km)</label>
+      <input name="kilometrage" type="number">
+    </div>
+      <div class="input-field col s12 ">
+       
+        <label>Puissance (BhP)</label>
+          <input name="puissance" type="text"  required>
+    </div>
+    <br>
+    
+  </div>
+  <div class=" col s6">
+    <div class="row">
+    
+      <label>Année</label>
+      <select class="browser-default">
+        <option value="" disabled selected>Choisissez une option</option>
+        {% for i in year_list %}
+        <option value="1">{{ i }}</option>
+        {% endfor %}
+     
+      </select>
+    </div>
+    <div class="row ">
+      
+      <label>Localisation</label>
+      <select class="browser-default">
+        <option value="" disabled selected>Choisissez une ville</option>
+        <option value="1">Mumbai</option>
+        <option value="2">Hyderabad</option>
+        <option value="3">Kochi</option>
+        <option value="4">Coimbatore</option>
+        <option value="5">Pune</option>
+        <option value="6">Delhi</option>
+        <option value="7">Kolkata</option>
+        <option value="8">Chennai</option>
+        <option value="9">Jaipur</option>
+        <option value="10">Bangalore</option>
+        <option value="11">Ahmedabad</option>
+      </select>
+    </div>
+    <div class="row ">
+     
+      <label>Nombre de sièges</label>
+      <select class="browser-default">
+        <option value="" disabled selected>Choisissez une valeur</option>
+        <option value="1">2</option>
+        <option value="2">4</option>
+        <option value="3">5</option>
+        <option value="4">6</option>
+        <option value="5">7</option>
+        <option value="6">8</option>
+        <option value="7">9</option>
+        <option value="8">10</option>
+      </select>
+  </div>
+  <div class="row ">
+      
+      <label>Transmission</label>
+      <select class="browser-default">
+        <option value="" disabled selected>Choisissez une option</option>
+        <option value="1">Manuelle</option>
+        <option value="2">Automatique</option>
+      </select>
+  </div>
+  <div class="row ">
+     
+      <label>Type de propriétaire</label>
+      <select class="browser-default">
+        <option value="" disabled selected>Choisissez une option</option>
+        <option value="1">première main</option>
+        <option value="2">seconde main</option>
+        <option value="3">troisième main</option>
+        <option value="4">quatrième main et plus</option>
+      </select>
+  </div>
+  <div class="row">
+     
+      <label>Type de fuel</label>
+      <select class="browser-default">
+        <option value="" disabled selected>Choisissez une option</option>
+        <option value="1">Diesel</option>
+        <option value="2">Essence</option>
+        <option value="3">electrique</option>
+        <option value="4">CNG</option>
+        <option value="5">Gpl</option>
+      </select>
+  </div>
+  </div>
+    
+  </div>
+  <div class=" right">
+    <button type="submit" class="btn-large waves-effect waves-light teal lighten-1">Estimer</button>
+  </div>
+  
+  <div class=" left">
+    <a href="{{ url_for('control')}}"  class="btn-large waves-effect waves-light teal lighten-1">Menu estimateurs</a>
+  </div>
+  <br>
+  </form>
+  <br><br>
+</div>
+</div>
+
+{% endblock %}

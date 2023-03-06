@@ -1,0 +1,63 @@
+{% extends 'base.html' %} {% block header %}
+
+{% endblock %} {% block content %}
+<div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">
+          <img src="{{ url_for('static', filename='images/logo-compagny.png') }}" alt="logo de la compagnie" class="responsive-img">
+        </h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Choisissez un type d'estimateur</h5>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+  
+</div>
+<div class="container">
+    <div class="section">
+
+      <!--   Section des modèles   -->
+        <div class="row">
+            <div class="col s12 m4">
+                        
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">
+                          <a href="{{ url_for('predict01')}}">Estimateur rapide</a>
+                        </span> 
+                        Cet algorithme vous permet d'avoir un résultat rapide avec seulement 3 de critères.  
+                    </div>
+                </div>
+            </div>
+
+    <div class="col s12 m4">
+        
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">
+                      <a href="{{ url_for('predict02')}}">Estimateur précis</a>
+                    </span>    
+                    Cet algorithme vous permet d'avoir un résultat plus précis avec un maximum de 10 de critères. 
+                </div>
+            </div>
+    </div>
+
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">
+                      <a href="{{ url_for('predict03')}}">Estimateur optimal</a>
+                    </span>  
+                    Cet algorithme vous permet d'avoir un résultat  optimal avec un maximum de 9 critères. 
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+  <br><br>
+{% endblock %}
