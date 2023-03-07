@@ -126,9 +126,9 @@ def dashboard():
 
 
 # Import des modèles
-mdl1 = 'bagging_regressor_restraint_3.pkl'
-mdl2 = 'ExtraTreesRegressor_full-10.pkl'
-mdl3 = 'ext_tree.joblib'
+mdl1 = 'Regression & Clustering\\Projet Regression & Clustering\\FlaskAPP0403\\bagging_regressor_restraint_3.pkl'
+mdl2 = 'Regression & Clustering\\Projet Regression & Clustering\\FlaskAPP0403\\ExtraTreesRegressor_full-10.pkl'
+mdl3 = 'Regression & Clustering\\Projet Regression & Clustering\\FlaskAPP0403\\ext_tree.joblib'
 
 # route de control_panel pour choisir les modèles
 modeles = [mdl1, mdl2, mdl3]
