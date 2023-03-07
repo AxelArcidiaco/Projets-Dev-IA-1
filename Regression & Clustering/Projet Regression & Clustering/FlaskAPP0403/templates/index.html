@@ -12,7 +12,11 @@
           <h5 class="header col s12 light">Votre comparateur de prix de véhicules d'occasion</h5>
         </div>
         <div class="row center">
+          {% if current_user.is_authenticated %}
           <a href="{{ url_for('control')}}"  class="btn-large waves-effect waves-light teal lighten-1">Commencez une estimation</a>
+          {% else %}
+          <a href="{{ url_for('login')}}"  class="btn-large waves-effect waves-light teal lighten-1">Connexion ou Inscription</a>
+          {% endif %}
         </div>
         <br><br>
 
