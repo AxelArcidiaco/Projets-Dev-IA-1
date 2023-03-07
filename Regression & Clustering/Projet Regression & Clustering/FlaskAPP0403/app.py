@@ -1,10 +1,8 @@
 from flask import Flask, render_template, request, session, redirect, url_for, flash
-from flask_login import LoginManager, login_user, logout_user, current_user, login_required, UserMixin
+from flask_login import LoginManager, login_user, logout_user, current_user, login_required
 from models import User, db, Contact, ContactForm
 from werkzeug.security import generate_password_hash
 from werkzeug.security import check_password_hash
-from pydantic import BaseModel
-from typing import Optional
 import pandas as pd
 import secrets
 import pickle
@@ -79,7 +77,7 @@ def login():
 
         # Vérifie si le mot de passe est correct
         if not  user or not check_password_hash(user.password_hash, password):
-            flash('Email ou mot de passe incorrect', 'danger')
+            flash("<div class='row center'><h1>Email ou mot de passe incorrect</h1></div>")
             return redirect(url_for('login'))
         else:
             # Connecte l'utilisateur
@@ -121,19 +119,22 @@ def contact():
 ########## ROUTES DES PREDICTIONS  ############################
 
 @app.route('/dashboard')
+@login_required
 def dashboard():
+   
     return render_template('dashboard.html')
 
 
 # Import des modèles
-mdl1 = 'Regression & Clustering\\Projet Regression & Clustering\\FlaskAPP0403\\bagging_regressor_restraint_3.pkl'
-mdl2 = 'Regression & Clustering\\Projet Regression & Clustering\\FlaskAPP0403\\ExtraTreesRegressor_full-10.pkl'
-mdl3 = 'Regression & Clustering\\Projet Regression & Clustering\\FlaskAPP0403\\extr_tree.joblib'
+mdl1 = 'bagging_regressor_restraint_3.pkl'
+mdl2 = 'ExtraTreesRegressor_full-10.pkl'
+mdl3 = 'ext_tree.joblib'
 
 # route de control_panel pour choisir les modèles
 modeles = [mdl1, mdl2, mdl3]
 
 @app.route('/control_panel')
+@login_required
 def control():
     return render_template('control_panel.html', 
                            modele01=modeles[0], 
@@ -141,18 +142,14 @@ def control():
                            modele03=modeles[2])
 
 
-# On charge le modèle
-with open(mdl1, 'rb') as model:
-    model = pickle.load(model)
+# On charge le modèle 'extra_tree.joblib'
+with open(mdl3, 'rb') as model:
+    model = joblib.load(model)
 
-class request_body(BaseModel):
-    year : int
-    transmission : str
-    power : int
-   
 
 # modele 01 : trois features
 @app.route('/predict01', methods = ['POST', 'GET'])
+@login_required
 def predict01():
         
     # la boucle qui affiche les années
@@ -166,6 +163,7 @@ def predict01():
 
 # modele 02 : dix features
 @app.route('/predict02')
+@login_required
 def predict02():
 
     # la boucle qui affiche les années
@@ -178,7 +176,10 @@ def predict02():
 
 # modele 03 : 9 features
 @app.route('/predict03')
+@login_required
 def predict03():
+
+    
 
     # la boucle qui affiche les années
     year_list = []
@@ -190,21 +191,45 @@ def predict03():
 
 # prediction des modèles
 @app.route('/predict', methods=['GET', 'POST'])
+@login_required
 def predict():
+
+
     if request.method == 'POST':
         year = request.form.get("year")
         transmission = request.form.get("transmission")
         power = request.form.get("power")
+        location = request.form.get("location")
+        fuel_type = request.form.get("fuel_type")
+        owner_type = request.form.get("owner_type")
+        kilometers_driven = request.form.get("kilometers_driven")
+        mileage = request.form.get("mileage")
+        seats = request.form.get("seats")
 
         # Prédiction sur une donnée
-        new_data = [[
+        new_data = pd.DataFrame(columns=[ 'year',
+            'transmission',
+            'power',
+            'location',
+            'fuel_type', 
+            'owner_type',
+            'kilometers_driven',
+            'mileage',
+            'seats'], data=[[
             year,
             transmission,
-            power
-        ]]
+            power,
+            location,
+            fuel_type, 
+            owner_type,
+            kilometers_driven,
+            mileage,
+            seats
+        ]])
     
         prix = model.predict(new_data)
-    return render_template('prediction.html', prix = round(prix[0], 2))
+
+    return render_template('prediction.html', prix=prix[0])
 
 ###########################################################################
 

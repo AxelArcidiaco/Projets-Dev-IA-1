@@ -38,13 +38,13 @@
       </div>
         <div class="input-field col s12 ">
           <label>Puissance (BhP)</label>
-            <input name="puissance" type="text"  required>
+            <input name="puissance" type="number"  required>
       </div>
     </div>
     <div class="col s6">
       <div class="row ">
         <label>Localisation</label>
-        <select class="browser-default">
+        <select class="browser-default" type="text" name="location">
           <option value="" disabled selected>Choisissez une ville</option>
           <option value="1">Mumbai</option>
           <option value="2">Hyderabad</option>
@@ -62,7 +62,7 @@
     
       <div class="row ">
         <label>Année</label>
-        <select class="browser-default">
+        <select class="browser-default" type="number" name="year">
           <option value="" disabled selected>Choisissez une option</option>
           {% for i in year_list %}
           <option value="1">{{ i }}</option>
@@ -72,7 +72,7 @@
       </div>
       <div class="row ">
         <label>Nombre de sièges</label>
-        <select class="browser-default">
+        <select class="browser-default" type="number" name="seats">
           <option value="" disabled selected>Choisissez une valeur</option>
           <option value="1">2</option>
           <option value="2">4</option>
@@ -86,7 +86,7 @@
     </div>
     <div class="row ">
         <label>Transmission</label>
-        <select class="browser-default">
+        <select class="browser-default" type="text" name="transmission">
           <option value="" disabled selected>Choisissez une option</option>
           <option value="1">Manuelle</option>
           <option value="2">Automatique</option>
@@ -94,7 +94,7 @@
     </div>
     <div class="row ">
         <label>Type de propriétaire</label>
-        <select class="browser-default">
+        <select class="browser-default" type="text" name="owner_type" >
           <option value="" disabled selected>Choisissez une option</option>
           <option value="1">première main</option>
           <option value="2">seconde main</option>
@@ -104,7 +104,7 @@
     </div>
     <div class="row">
         <label>Type de fuel</label>
-        <select class="browser-default">
+        <select class="browser-default" type="text" name="fuel_type">
           <option value="" disabled selected>Choisissez une option</option>
           <option value="1">Diesel</option>
           <option value="2">Essence</option>

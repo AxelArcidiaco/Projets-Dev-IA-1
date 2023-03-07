@@ -1,21 +1,22 @@
 {% extends 'base.html' %} {% block header %}
 
 {% endblock %} {% block content %}
-
-<div class="row center">
-	<div class="col-md-6">
-		<div class="h-100 p-5 bg-light ">
-			<h1>Prix estimé du véhicule</h1>
-			<h2 class="fw-bold pb-3">
-				{{ prix }} INR Lakhs
-			</h2>
-			<p>
-				1 Lakhs = 100000 Roupie Indien
-				<br />
-				1 Roupie Indien ~= 0.011€
-			</p>
+<div class="container">
+    <div class="row center" >
+		<div class="col s12">
+			<div class="h-100 p-5 bg-light ">
+				<h1>Prix estimé du véhicule en roupie</h1>
+				<h2 class="fw-bold pb-3">
+					{{ prix }} Lakh 
+				</h2>
+                <br>
+                <p>1 Lakh = 100 000 Roupies</p>
+			</div>
 		</div>
 	</div>
-	<a href="{{ url_for('control')}}" class="btn-large waves-effect waves-light teal lighten-1">Menu estimateurs</a>
+    <div class=" center">
+        <a href="{{ url_for('control')}}"  class="btn-large waves-effect waves-light teal lighten-1">Menu estimateurs</a>
+    </div>
+    <br><br>
 </div>
 {% endblock %}
