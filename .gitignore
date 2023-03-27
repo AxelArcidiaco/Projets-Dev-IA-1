@@ -228,3 +228,6 @@ Business Intelligence/Story 5/workshops/covid_19/csse_covid_19_time_series/.svn/
 *.csv#
 *.ods#
 *.jpg
+*.png
+*.jpeg
+*.npy
