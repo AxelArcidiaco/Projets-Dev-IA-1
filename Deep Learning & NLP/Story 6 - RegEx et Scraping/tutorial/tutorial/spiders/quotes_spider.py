@@ -1,20 +1,24 @@
-# Importing the necessary modules
 import scrapy
 
-# Defining a new spider by inheriting from scrapy.Spider class
-class QuotesSpider(scrapy.Spider):
-    name = "quotes" # Name of the spider
-    # List of URLs to be crawled
-    start_urls = [
-        'https://quotes.toscrape.com/page/1/',
-        'https://quotes.toscrape.com/page/2/',
-    ]
 
-    # Function to parse the response received from the URLs
+class AuthorSpider(scrapy.Spider):
+    name = 'author'
+
+    start_urls = ['https://quotes.toscrape.com/']
+
     def parse(self, response):
-        for quote in response.css('div.quote'):
-            yield {
-                'text': quote.css('span.text::text').get(),
-                'author': quote.css('small.author::text').get(),
-                'tags': quote.css('div.tags a.tag::text').getall(),
-            }
+        author_page_links = response.css('.author + a')
+        yield from response.follow_all(author_page_links, self.parse_author)
+
+        pagination_links = response.css('li.next a')
+        yield from response.follow_all(pagination_links, self.parse)
+
+    def parse_author(self, response):
+        def extract_with_css(query):
+            return response.css(query).get(default='').strip()
+
+        yield {
+            'name': extract_with_css('h3.author-title::text'),
+            'birthdate': extract_with_css('.author-born-date::text'),
+            'bio': extract_with_css('.author-description::text'),
+        }
