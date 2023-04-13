@@ -6,7 +6,7 @@ import scrapy
 class QuotesSpider(scrapy.Spider):
     name = "quotes"  # Name of the spider
 
-    # Function to generate the starting URL requests
+    # Function to generate the starting URL requests. This function can be replaced by a list of URLs to be crawled
     def start_requests(self):
         urls = [
             'https://quotes.toscrape.com/page/1/',
