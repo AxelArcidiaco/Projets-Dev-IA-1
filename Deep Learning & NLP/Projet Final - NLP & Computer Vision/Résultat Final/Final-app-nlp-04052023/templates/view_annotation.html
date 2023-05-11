@@ -1,0 +1,33 @@
+{% extends 'base.html' %} {% block header %}
+
+{% endblock %} {% block content %}
+<div id="index-banner">
+<div class="section">
+	<div class="container pt-60">
+	
+	  <div class="row center mt-5">
+		<h5 class="header col s12 light">Image annotée</h5>
+	  </div>
+  
+	</div>
+  </div>
+  <div class="container">
+	<div class="row center annotate">
+		<!--Cadre de l'image annotée-->
+		<img src="data:image/jpg;base64,{{ img_path }}" alt="image annotée" class="responsive-img">
+	  <br>
+	</div>
+	<div class="row center">
+		<!--Description de l'image-->
+		<h4>Description de l'image :</h4>
+		<h5>{{ desc }} </h5>
+	</div>
+	<div class="row center">
+			<!--Bouton de retour à l'accueil-->
+			<a href="{{ url_for('home')}}"><button class="btn-large waves-effect waves-light"  type="submit"  style="background-color: #750c0c;">Retour</button></a>
+	
+  </div>
+  </div>
+</div>
+{% endblock %}
+

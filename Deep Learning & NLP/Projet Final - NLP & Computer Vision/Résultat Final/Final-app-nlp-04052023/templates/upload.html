@@ -1,0 +1,41 @@
+{% extends 'base.html' %} {% block header %}
+
+{% endblock %} {% block content %}
+<div id="index-banner" class="">
+<div class="section">
+	<div class="container">
+	<br>
+	  <div class="row center">
+		<h5 class="header col s12 light">Image téléchargée</h5>
+	  </div>
+	
+	  <br>
+  
+	</div>
+  </div>
+  <div class="container pt-60">
+	<div class="upload-page">
+		
+			<div class="img">
+				<!-- Cadre de l'image chargée depuis l'ordinateur -->
+				<img src="{{ filename }}" alt="image chargée" class="responsive-img">
+			  </div>
+			  <div class="upload-btn col s6" style="padding-top: 15%;">
+				<div class="row">
+					<form method="POST" action="{{ url_for('delete_image', filename=filename)}}">
+						<!--Bouton de suppression-->
+						<button class="btn-large waves-effect waves-light"  type="submit"  style="background-color: #750c0c;">Modifier</button>
+					</form>
+				</div>
+				<div class="row">
+					<form method="POST" action="{{ url_for('annotate', filename=filename)}}">
+						<!--Bouton d'annotation-->
+						<button class="btn-large waves-effect waves-light"  type="submit" style="background-color: #750c0c;">Annoter</button>
+					</form>
+				</div>
+			</div>
+		  </div>
+		
+  </div>
+</div>
+{% endblock %}

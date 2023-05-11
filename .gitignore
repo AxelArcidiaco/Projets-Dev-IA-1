@@ -254,3 +254,67 @@ Deep Learning & NLP/Projet Final - NLP & Computer Vision/Coco_Dataset/annotation
 Deep Learning & NLP/Projet Final - NLP & Computer Vision/Coco_Dataset/image_info_test2017/annotations/image_info_test-dev2017.json
 Deep Learning & NLP/Projet Final - NLP & Computer Vision/Coco_Dataset/image_info_test2017/annotations/image_info_test2017.json
 Deep Learning & NLP/Projet Final - NLP & Computer Vision/With Tensorflow/glove.6B.200d.txt
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Data/Coco_Dataset/annotations_trainval2017/annotations/captions_train2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Data/Coco_Dataset/annotations_trainval2017/annotations/captions_val2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Data/Coco_Dataset/annotations_trainval2017/annotations/instances_train2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Data/Coco_Dataset/annotations_trainval2017/annotations/instances_val2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Data/Coco_Dataset/annotations_trainval2017/annotations/person_keypoints_train2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Data/Coco_Dataset/annotations_trainval2017/annotations/person_keypoints_val2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Data/Coco_Dataset/annotations_trainval2017/annotations/captions_train2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Data/Coco_Dataset/annotations_trainval2017/annotations/captions_val2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Data/Coco_Dataset/annotations_trainval2017/annotations/instances_train2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Data/Coco_Dataset/annotations_trainval2017/annotations/instances_val2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Data/Coco_Dataset/annotations_trainval2017/annotations/person_keypoints_train2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Data/Coco_Dataset/annotations_trainval2017/annotations/person_keypoints_val2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Data/Coco_Dataset/image_info_test2017/annotations/image_info_test-dev2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Data/Coco_Dataset/image_info_test2017/annotations/image_info_test2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Custom Image Caption Generator/data/image_info_test2017/annotations/image_info_test2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Custom Image Caption Generator/data/image_info_test2017/annotations/image_info_test-dev2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Custom Image Caption Generator/data/annotations_trainval2017/annotations/person_keypoints_val2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Custom Image Caption Generator/data/annotations_trainval2017/annotations/instances_val2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Custom Image Caption Generator/data/annotations_trainval2017/annotations/captions_val2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Custom Image Caption Generator/data/annotations_trainval2017/annotations/captions_train2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Custom Image Caption Generator/caption_generator.ipynb
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/CNN+Transformer/CNN+Transformer.ipynb
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/CNN+Transformer/CNN+Transformer.ipynb
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Custom Image Caption Generator/caption_generator.ipynb
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Custom Image Caption Generator/data/annotations_trainval2017/annotations/captions_train2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Custom Image Caption Generator/data/annotations_trainval2017/annotations/captions_val2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Custom Image Caption Generator/data/annotations_trainval2017/annotations/instances_val2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Custom Image Caption Generator/data/annotations_trainval2017/annotations/person_keypoints_val2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Custom Image Caption Generator/data/image_info_test2017/annotations/image_info_test-dev2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Custom Image Caption Generator/data/image_info_test2017/annotations/image_info_test2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Custom Image Caption Generator/data/annotations_trainval2017/annotations/captions_train2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Custom Image Caption Generator/data/annotations_trainval2017/annotations/captions_val2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Custom Image Caption Generator/data/annotations_trainval2017/annotations/instances_val2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Custom Image Caption Generator/data/annotations_trainval2017/annotations/person_keypoints_val2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Custom Image Caption Generator/data/image_info_test2017/annotations/image_info_test-dev2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Custom Image Caption Generator/data/image_info_test2017/annotations/image_info_test2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Tests Dév/With Tensorflow/glove.6B.200d.txt
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Tests Dév/With CNN-RNN/tokenizer.joblib
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Custom Image Caption Generator/data/annotations_trainval2017/annotations/captions_train2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Custom Image Caption Generator/data/annotations_trainval2017/annotations/captions_val2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Custom Image Caption Generator/data/annotations_trainval2017/annotations/instances_val2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Custom Image Caption Generator/data/annotations_trainval2017/annotations/person_keypoints_val2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Custom Image Caption Generator/data/image_info_test2017/annotations/image_info_test-dev2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Custom Image Caption Generator/data/image_info_test2017/annotations/image_info_test2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Tests Dév/Custom Image Caption Generator/data/image_info_test2017/annotations/image_info_test2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Tests Dév/Custom Image Caption Generator/data/image_info_test2017/annotations/image_info_test-dev2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Tests Dév/Custom Image Caption Generator/data/annotations_trainval2017/annotations/person_keypoints_val2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Tests Dév/Custom Image Caption Generator/data/annotations_trainval2017/annotations/person_keypoints_train2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Tests Dév/Custom Image Caption Generator/data/annotations_trainval2017/annotations/instances_val2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Tests Dév/Custom Image Caption Generator/data/annotations_trainval2017/annotations/instances_train2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Tests Dév/Custom Image Caption Generator/data/annotations_trainval2017/annotations/captions_val2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Tests Dév/Custom Image Caption Generator/data/annotations_trainval2017/annotations/captions_train2017.json
+Deep Learning & NLP/Projet Final - NLP & Computer Vision/Tests Dév/VGG16/features.joblib
+*.4
+*.2
+*.5
+*.3
+*.0
+*.11
+*.1
+*.6
+*.7
+*.8
+*.10
